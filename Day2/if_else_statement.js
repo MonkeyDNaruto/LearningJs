@@ -1,0 +1,7 @@
+// WAP to check wheather the number is odd or even
+var num = 1001;
+if(num%2==0){
+    console.log("num is even")
+} else {
+    console.log("num is odd")
+}
