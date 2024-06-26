@@ -1,0 +1,29 @@
+<!-- Write a callback function that will alert us today date when we click on webpage
+Complete this code to pass the following message ('well done') to alertMe function when we move our mouse over the page 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack</title>
+</head>
+<body>
+    <h1>CallBack Function</h1>
+    
+    <script>
+        let date = function (){
+            let todayDate = new Date();
+            alert(todayDate);
+        }
+
+        function alertMe(message) {
+            alert(message);
+        }
+
+        document.addEventListener('click', date);
+        document.addEventListener('mouseover', () => alertMe("well done"));
+    </script>
+</body>
+</html>
