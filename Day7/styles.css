@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(252, 142, 102);
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+#heart {
+    position: absolute;
+    width: 100px;
+    height: 90px;
+}
+
+#heart::before,
+#heart::after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: rgb(250, 63, 63);
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+#heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
