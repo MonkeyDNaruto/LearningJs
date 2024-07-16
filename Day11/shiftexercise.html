@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shift Exercise</title>
+    <style>
+        body{
+            background-color: rgb(24, 110, 147);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .fridge{
+            background-color: rgb(249, 233, 212);
+            height: 180px;
+            width: 100px;
+            border-radius: 10px;
+            outline: 10px solid rgb(164, 164, 164);
+        }
+        .shelf{
+            height: 45px;
+            display: flex;
+            align-items: flex-end;
+            border-bottom: 5px solid rgb(118, 117, 117);
+        }
+    </style>
+</head>
+<body>
+    <div class="fridge">
+        <div class="shelf" id="top-shelf"></div>
+        <div class="shelf"></div>
+        <div class="shelf"></div>
+    </div>
+
+    <script src="shiftexercise.js"></script>
+</body>
+</html>
